@@ -1,0 +1,91 @@
+main{
+    width: 100%;
+    min-height: 100vh; 
+    /* Altura da janela do meu dispositivo */
+    display: flex;
+    align-items: center;/* Alinha no dentido ao contrario do flex */
+    justify-content: center;/* Alinha no sentido do flex */
+}
+
+main > div{
+    width: 90%;
+    display: flex;
+    /* Ativa o flex */
+   gap: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Formulário */
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    gap: 15px;
+}
+
+#secao-cadastro{
+ height: 60px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.estilo-formulario{
+    border: var(--borda);
+    width: 100%;
+    max-width: 340px;
+    background-color: var(--cor-branco);
+}
+
+#formulario > div{
+    width: 100%;
+
+}
+
+#formulario > div > label{
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinza-escuro2);
+    font-weight: 500;/* aumenta ou diminui a espessura da fonte */
+    padding-bottom: 2px;
+
+}
+
+.formulario-botao-azul{
+    width: 100%;
+}
+
+#formulario > p{
+  /*  text-transform: uppercase;  Transforma o texto em maiusculo*/
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinza-escuro1);
+}
+
+#formulario > a, #secao-cadastro > p > a{
+    text-decoration: none;
+    color: var(--cor-azul);
+}
+
+#secao-cadastro > p{
+    font-size: var(--tamanho-fonte-md);
+}
+
+.informacao-aplicativo{
+    font-size: var( --tamanho-fonte-sm);
+    color: var(--cor-preto);
+    font-weight: 400;
+
+}
+
+#secao-instalacao{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 10px; /* espacos em linhas e colunas */
+}
+
+#secao-instalacao img{
+    width: 133px;
+    height: 39px;
+}

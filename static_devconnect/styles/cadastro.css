@@ -1,0 +1,104 @@
+main{
+    width: 100%;
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main > div{
+    width: 90%;
+    display: flex;
+    /* Ativa o flex */
+   gap: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Formulário */
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    gap: 20px;
+}
+
+#secao-cadastro{
+ height: 60px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.estilo-formulario{
+    border: var(--borda);
+    width: 100%;
+    max-width: 340px;
+    background-color: var(--cor-branco);
+}
+
+#formulario > div{
+    width: 100%;
+
+}
+
+#formulario > div > label{
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinza-escuro2);
+    font-weight: 500;/* aumenta ou diminui a espessura da fonte */
+    padding-bottom: 2px;
+
+}
+
+.formulario-botao-azul{
+    width: 100%;
+}
+
+#formulario > p{
+  /*  text-transform: uppercase;  Transforma o texto em maiusculo*/
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinza-escuro1);
+}
+
+#formulario > a, #secao-cadastro > p > a{
+    text-decoration: none;
+    color: var(--cor-azul);
+}
+
+
+.file-upload {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 6px 12px;   /* deixei menor */
+    background-color: var(--cor-cinza-escuro1); /* cinza do botão */
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 14px;
+    gap: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
