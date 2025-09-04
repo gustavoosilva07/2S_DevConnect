@@ -8,9 +8,11 @@
     --cor-cinza-medio:   #E5E5E5;
     --cor-cinza-escuro1: #B6B6B6;
     --cor-cinza-escuro2: #4D4D4D;
-    --cor-cinza-escuro3:  #7D7D7D;
+    --cor-cinza-escuro3: #7D7D7D;
     --cor-cinza-escuro4: #D1D1D1;
     --cor-azul-claro:    #58B3C7;
+    --cor-azul-claro2:   #44A5DC;
+    --cor-azul-escuro:   #0077FF;
   
     
  
@@ -29,6 +31,7 @@
     margin:  0;
     box-sizing: border-box;/* o valor total do tamanho do elemento 
     conta tanto com espaços internos/externo e borda*/
+    outline-color: var(--cor-azul);
 }
 
 body{
@@ -55,12 +58,28 @@ input{
     background-color: var(--cor-cinza-claro);
 }
 
-#texto-upload{
+.formulario-botao-azul{
+    border-radius: var(--borda-arredondada);
+    border: none;
+    height: 35px;
+    color: var(--cor-branco);
+    background-color: #44A5DC;
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 600;
+
+}
+
+.file-upload{
     display: inline-block;
     width: 100%;
-    padding: 10px;
-    background-color: var(--cor-cinza-escuro3);
-    color: var(--cor-cinza-escuro2) ;
+    max-width: 300px;
+    min-height: 35px;
+    padding: 5px;
+    background-color: var(--cor-cinza-escuro1);
+    color: var(--cor-branco) ;
+    text-align: center;
+    font-weight: 600;
+    border-radius: var(--borda-arredondada);
     
 
 }
@@ -100,13 +119,34 @@ input{
     align-items: center;
 }
 
-#foto-perfil{
-    width: 23px;
-    height: 23px;
+.foto-perfil{
+    width: 40px;
+    height: 40px;
     object-fit: cover;/* Redimensionar foto*/
     object-position: center;
     border-radius: 50%;
 }
+
+.verificado{
+    width: 38px;
+}
+
+.verify{
+    width: 15px;
+    height: 15px;
+   }
+ 
+.foto-perfil{
+    width: 70;
+    }
+
+.user-info .verified {
+    margin-right: 0; /* remove espaçamento extra */
+  }
+
+.user-info .time {
+    margin-left: 0; /* remove espaçamento extra */
+  }
 
 /* RESPONSIVO*/
 @media only screen and (max-width: 485px) {
